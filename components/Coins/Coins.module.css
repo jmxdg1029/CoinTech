@@ -10,7 +10,7 @@
     align-items: center;
     height:80px;
     border-bottom: 1px solid #2e2e2e;
-    width:1000px;
+    width:1200px;
     padding:0rem 2rem;
 }
 
@@ -24,13 +24,10 @@
     padding-right: 24px;
 }
 
-.coin_img{
-    height:30px;
-    width:30px;
-    margin-right: 10px;
-}
+
 
 .coin_h1{
+    padding-left: 12px;
     font-size:16px;
     width:150px;
 }
