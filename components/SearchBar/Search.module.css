@@ -1,8 +1,14 @@
+.container{
+    display: flex;
+    justify-content: center;
+}
+
 .coin_search{
     margin-bottom: 64px;
     display:flex;
     align-items: center;
     width: 300px;
+    
 }
 
 .coin_input{
