@@ -1,8 +1,12 @@
 import style from './Coins.module.css'
 import Image from 'next/image'
+import Link from 'next/link'
+import React, {useEffect} from 'react';
 
 const Coins = ({name,price,symbol,marketcap,volume,image,priceChange,id}) => {
     return (
+        <Link href='/coin/[id]' as={`/coin/${id}`}>
+        <a className={style.link}>
         <div className={style.coin_container}>
             <div className={style.coin_row}>
                 <div className={style.coin}>
@@ -12,7 +16,7 @@ const Coins = ({name,price,symbol,marketcap,volume,image,priceChange,id}) => {
                 </div>
                 <div className={style.coin_data}>
                     <p className={style.coin_price}>${price}</p>
-                    <p className={style.coin_volume}> ${volume.toLocaleString()}</p>
+                    <p className={style.coin_volume}> Vol: ${volume.toLocaleString()}</p>
                     {priceChange < 0 ? (
                         <p className="text-danger">
                             {priceChange.toFixed(2)}%
@@ -24,11 +28,13 @@ const Coins = ({name,price,symbol,marketcap,volume,image,priceChange,id}) => {
                     )}
 
                     <p className={style.coin_marketcap}>
-                        ${marketcap.toLocaleString()}
+                        Mrkt Cap: ${marketcap.toLocaleString()}
                     </p>
                 </div>
             </div>
         </div>
+        </a>
+        </Link>
     )
 }
 

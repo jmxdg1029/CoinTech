@@ -1,0 +1,13 @@
+.coin_container{
+    display: flex;
+    justify-content: center;
+    height: 75vh;
+    background-color: #101012;
+}
+.coin_desc{
+    align-items: center;
+}
+
+.coin_title{
+    font-size: 3em;
+}
