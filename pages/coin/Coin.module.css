@@ -6,6 +6,7 @@
     background-color: #101012;
 }
 .coin_desc{
+    border-radius: 10px;
     line-height: 170%;
     border:solid;
     height: 550px;
@@ -23,4 +24,16 @@
 .coin_chart{
     border: white;
 }
-/*hello*/
+
+.chart_button_section{
+    margin-top: 10px;
+}
+
+.chart_button{
+    border:solid 1px;
+    border-radius: 5px;
+    color: black;
+    padding: 3px 30px;
+    margin:10px;
+    background-color: #6c915e;
+}
