@@ -2,7 +2,6 @@ import Layout from '../../components/Layout';
 import Image from 'next/image'
 import style from './Coin.module.css'
 import React, {useRef, useEffect, useState} from 'react';
-import { chartConfigs } from './chartConfigs/chartConfigs';
 import Chartjs from "../../node_modules/chart.js"
 import coinGecko from '../../apis/coinGecko';
 
