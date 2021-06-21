@@ -2,10 +2,18 @@
     display: flex;
     justify-content: center;
     height: 75vh;
+    margin-top: 80px;
     background-color: #101012;
 }
 .coin_desc{
+    line-height: 170%;
+    border:solid;
+    height: 550px;
+    border-color: white;
+    padding: 30px;
     align-items: center;
+    margin-left: 30px;
+    font-size: 1.2em;
 }
 
 .coin_title{
@@ -15,3 +23,4 @@
 .coin_chart{
     border: white;
 }
+/*hello*/

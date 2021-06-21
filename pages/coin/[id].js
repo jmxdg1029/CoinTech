@@ -57,7 +57,7 @@ const Coin = ({coin,id}) => {
                 type: 'line',
                 data: {
                     datasets: [{
-                        label: '# of Votes',
+                        label: `${id} price`,
                         data: coinData.day,
                         backgroundColor: "rgba(174,305,194,0.5)",
                         pointRadius:0,
@@ -79,8 +79,9 @@ const Coin = ({coin,id}) => {
                     <Image  src={coin.image.large} alt={coin.name} height={200} width={200} />
                     <p>{coin.name}</p>
                     <p>{coin.symbol}</p>
-                    <p>Current Price: ${coin.market_data.current_price.cad}</p>
-               
+                    <p>Price: ${coin.market_data.current_price.cad}</p>
+                    <p>Volume(24h): ${coin.market_data.total_volume.cad}</p>
+                    <p>Market Cap: ${coin.market_data.market_cap.cad}</p>
                 </div>
             </div>
         </Layout>
